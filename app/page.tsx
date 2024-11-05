@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
 import Link from "next/link";
+export const runtime = "edge";
 
 export default function Page() {
   return (

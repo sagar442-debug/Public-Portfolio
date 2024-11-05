@@ -2,6 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { projects } from "./project-data";
 import Image from "next/image";
+export const runtime = "edge";
 
 export const metadata: Metadata = {
   title: "Projects",

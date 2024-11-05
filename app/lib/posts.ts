@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+export const runtime = "edge";
 
 type Metadata = {
   title: string;
@@ -20,7 +21,7 @@ function parseFrontmatter(fileContent: string) {
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(": ");
     let value = valueArr.join(": ").trim();
-    value = value.replace(/^['"](.*)['"]$/, "$1"); 
+    value = value.replace(/^['"](.*)['"]$/, "$1");
     metadata[key.trim() as keyof Metadata] = value;
   });
 

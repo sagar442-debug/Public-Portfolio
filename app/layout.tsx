@@ -8,6 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
+export const runtime = "edge";
 
 export const metadata: Metadata = {
   metadataBase: new URL(metaData.baseUrl),
