@@ -2,6 +2,7 @@ import { Feed } from "feed";
 import { getBlogPosts } from "app/lib/posts";
 import { metaData } from "app/config";
 import { NextResponse } from "next/server";
+export const runtime = "edge";
 
 export async function generateStaticParams() {
   return [

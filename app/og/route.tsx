@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { metaData } from "app/config";
+export const runtime = "edge";
 
 export function GET(request: Request) {
   let url = new URL(request.url);
