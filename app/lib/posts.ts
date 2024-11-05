@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-export const runtime = "edge";
 
 type Metadata = {
   title: string;
